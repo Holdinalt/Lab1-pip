@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="main.js"></script>
+</head>
+<body onload="loadScripts()">
+    <form name= myForm method="post" >
+        <fieldset>
+        <table><legend>Введите координаты точки</legend>
+            <tr><td colspan="2"><a id="errorAns"></a></td></td></tr>
+            <tr>
+                <td>Изменение Х:</td>
+                <td>
+                    <label for="radio-4">-4</label><input required id="radio-4" name="formRadiosX" type="radio" value="-4">
+                    <label for="radio-3">-3</label><input required id="radio-3" name="formRadiosX" type="radio" value="-3">
+                    <label for="radio-2">-2</label><input required id="radio-2" name="formRadiosX" type="radio" value="-2">
+                    <label for="radio-1">-1</label><input required id="radio-1" name="formRadiosX" type="radio" value="-1">
+                    <label for="radio0">-0</label><input required id="radio0" name="formRadiosX" type="radio" value="0">
+                    <label for="radio1">1</label><input required id="radio1" name="formRadiosX" type="radio" value="1">
+                    <label for="radio2">2</label><input required id="radio2" name="formRadiosX" type="radio" value="2">
+                    <label for="radio3">3</label><input required id="radio3" name="formRadiosX" type="radio" value="3">
+                    <label for="radio4">4</label><input required id="radio4" name="formRadiosX" type="radio" value="4">
+                </td>
+            </tr>
+            <tr>
+                <td>Изменение Y:</td>
+                <td>
+                    <label for="textY">(-5 ... 3) </label><input required id="textY" name="formTextY" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="submitFormButton">Подтвердить: </label><button type="submit" id=submitFormButton >Отправить</button>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>
