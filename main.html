@@ -9,30 +9,40 @@
     <form name= myForm method="post" >
         <fieldset>
         <table><legend>Введите координаты точки</legend>
-            <tr><td colspan="2"><a id="errorAns"></a></td></td></tr>
+            <tr><td colspan="2"><span id="errorAns"></span></td></tr>
             <tr>
                 <td>Изменение Х:</td>
                 <td>
-                    <label for="radio-4">-4</label><input required id="radio-4" name="formRadiosX" type="radio" value="-4">
-                    <label for="radio-3">-3</label><input required id="radio-3" name="formRadiosX" type="radio" value="-3">
-                    <label for="radio-2">-2</label><input required id="radio-2" name="formRadiosX" type="radio" value="-2">
-                    <label for="radio-1">-1</label><input required id="radio-1" name="formRadiosX" type="radio" value="-1">
-                    <label for="radio0">-0</label><input required id="radio0" name="formRadiosX" type="radio" value="0">
-                    <label for="radio1">1</label><input required id="radio1" name="formRadiosX" type="radio" value="1">
-                    <label for="radio2">2</label><input required id="radio2" name="formRadiosX" type="radio" value="2">
-                    <label for="radio3">3</label><input required id="radio3" name="formRadiosX" type="radio" value="3">
-                    <label for="radio4">4</label><input required id="radio4" name="formRadiosX" type="radio" value="4">
+                    <label>-4<input required name="formRadiosX" type="radio" value="-4"></label>
+                    <label>-3<input required name="formRadiosX" type="radio" value="-3"></label>
+                    <label>-2<input required name="formRadiosX" type="radio" value="-2"></label>
+                    <label>-1<input required name="formRadiosX" type="radio" value="-1"></label>
+                    <label>-0<input required name="formRadiosX" type="radio" value="0"></label>
+                    <label>1<input required name="formRadiosX" type="radio" value="1"></label>
+                    <label>2<input required name="formRadiosX" type="radio" value="2"></label>
+                    <label>3<input required name="formRadiosX" type="radio" value="3"></label>
+                    <label>4<input required name="formRadiosX" type="radio" value="4"></label>
                 </td>
             </tr>
             <tr>
                 <td>Изменение Y:</td>
                 <td>
-                    <label for="textY">(-5 ... 3) </label><input required id="textY" name="formTextY" type="text">
+                    <label >(-5 ... 3) <input required id="formTextY"  type="text"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Изменение R:</td>
+                <td>
+                    <label >1.0 <input name="formCheckBoxesR"  type="checkbox"></label>
+                    <label >1.5 <input name="formCheckBoxesR"  type="checkbox"></label>
+                    <label >2.0 <input name="formCheckBoxesR"  type="checkbox"></label>
+                    <label >2.5 <input name="formCheckBoxesR"  type="checkbox"></label>
+                    <label >3.0 <input name="formCheckBoxesR"  type="checkbox"></label>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <label for="submitFormButton">Подтвердить: </label><button type="submit" id=submitFormButton >Отправить</button>
+                    <label >Подтвердить: <button type="submit" id=submitFormButton >Отправить</button></label>
                 </td>
             </tr>
         </table>
