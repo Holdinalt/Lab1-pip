@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <?php req   ?>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="main.js"></script>
@@ -18,7 +19,7 @@
                     <span class = "header">Страница главного дрочилы всего интернета
                     </span>
                 </td>
-                <td>
+                <td width="33%" align="center">
                     <span class = "header">Вариант: 2407
                     </span>
                 </td>
@@ -26,10 +27,11 @@
         </table>
     </header>
 
-    <form name= myForm method="post" >
-        <fieldset>
-        <table><legend>Введите координаты точки</legend>
-            <tr><td colspan="2"><span id="errorAns" ></span></td></tr>
+    <form name=myForm method="post" action="main.php">
+        <table class="Form">
+            <tr><td colspan="2"><legend>Введите координаты точки</legend></td></tr>
+            <tr>
+            <tr><td colspan="2"><span id="errorAns" class="errorAns"></span></td></tr>
             <tr>
                 <td>Изменение Х:</td>
                 <td>
@@ -47,7 +49,7 @@
             <tr>
                 <td>Изменение Y:</td>
                 <td>
-                    <label >(-5 ... 3) <input required id="formTextY"  type="text"></label>
+                    <label >(-5 ... 3) <input required id="formTextY" name="formTextY"  type="text"></label>
                 </td>
             </tr>
             <tr>
@@ -62,11 +64,10 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <label >Подтвердить: <button type="submit" id=submitFormButton >Отправить</button></label>
+                    <label >Подтвердить: <button type="submit" name="submit" id=submitFormButton >Отправить</button></label>
                 </td>
             </tr>
         </table>
-        </fieldset>
     </form>
 </body>
 </html>

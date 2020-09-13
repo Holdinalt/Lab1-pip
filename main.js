@@ -4,6 +4,9 @@ function loadScripts(){
     yInForm.yListener();
     rInForm.rListener();
     buttonForm.buttonChecker();
+
+    //httpRequest = new XMLHttpRequest();
+    //httpRequest.
 }
 
 // const xInForm = {

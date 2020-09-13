@@ -3,3 +3,18 @@ header {
     font-family: fantasy;
     font-size: 200%;
 }
+table.Form {
+    width : 30%;
+    background-color: antiquewhite;
+
+}
+body{
+    background-color: gray;
+}
+span.errorAns{
+    color: red;
+}
+
+span.answer{
+
+}
