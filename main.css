@@ -15,6 +15,10 @@ span.errorAns{
     color: red;
 }
 
-span.answer{
+span.badAns{
+    color: red;
+}
 
+span.goodAns{
+    color: green;
 }

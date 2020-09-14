@@ -1,45 +1,16 @@
 
+
+
 function loadScripts(){
-    //xInForm.xListener();
     yInForm.yListener();
     rInForm.rListener();
     buttonForm.buttonChecker();
-
-    //httpRequest = new XMLHttpRequest();
-    //httpRequest.
+    buttonForm.buttonListener();
 }
 
-// const xInForm = {
-//
-//     isSubmit : false,
-//
-//     // xListener : function xListener(){
-//     //     let rad = document.formRadiosX;
-//     //     let prev = null;
-//     //     for (let i = 0; i < rad.length; i++) {
-//     //         rad[i].addEventListener('change', function() {
-//     //             alert("sdf")
-//     //             this.isSubmit = true;
-//     //             (prev) ? console.log(prev.value): null;
-//     //             if (this !== prev) {
-//     //                 prev = this;
-//     //             }
-//     //         }, false);
-//     //     }
-//     // },
-//
-//     isXSubmit : function checkXSubmit(){
-//         let rad = document.formRadiosX;
-//         for (let i = 0; i < rad.length; i++) {
-//             (rad[i].value)? this.isSubmit = true : null;
-//             }
-//     }
-// }
 
 const yInForm = {
-
     isSubmit : false,
-
     checkStr : function (str){
         let path = /^((-[1-4](\.|,)[0-9])|([0-2](\.|,)[0-9])|-5(\.|,)0|3(\.|,)0|-[1-5]|[0-3])$/
 
@@ -105,7 +76,7 @@ const rInForm = {
 
 const buttonForm = {
 
-    checkSub : function (isSubmit){
+    checkSub : function (){
         let button = document.getElementById("submitFormButton")
         if(yInForm.isSubmit === true){
             button.disabled = false;
@@ -117,12 +88,32 @@ const buttonForm = {
     buttonChecker : function (){
         let button = document.getElementById("submitFormButton")
         button.addEventListener("mouseover", function (){
-            this.checkSub(yInForm.isSubmit);
+            this.checkSub();
 
         })
-    }
+    },
+
+    buttonListener : function (){
+        $("#submitFormButton").click(this.send());
+    },
+
+    send : function(){
+    let formRadiosX = $("input[name='formRadiosX']:checked").val();
+    let formTextY = $('#formTextY').val();
+    let formCheckBoxesR = $('input[name="formCheckBoxesR"]').val();
+    $.ajax({
+        type: 'POST',
+        url: 'main.php?action=main.php',
+        data: "formRadiosX="+formRadiosX+"&formTextY"+formTextY+"&formCheckBoxesR"+formCheckBoxesR,
+        success: function(data){
+            $('#answer').html(data);
+        }
+    })
+}
 
 }
+
+
 
 
 

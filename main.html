@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <?php req   ?>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="main.js"></script>
@@ -27,7 +27,7 @@
         </table>
     </header>
 
-    <form name=myForm method="post" action="main.php">
+    <form name=myForm method="post" >
         <table class="Form">
             <tr><td colspan="2"><legend>Введите координаты точки</legend></td></tr>
             <tr>
@@ -55,17 +55,22 @@
             <tr>
                 <td>Изменение R:</td>
                 <td>
-                    <label >1.0 <input name="formCheckBoxesR"  type="checkbox"></label>
-                    <label >1.5 <input name="formCheckBoxesR"  type="checkbox"></label>
-                    <label >2.0 <input name="formCheckBoxesR"  type="checkbox"></label>
-                    <label >2.5 <input name="formCheckBoxesR"  type="checkbox"></label>
-                    <label >3.0 <input name="formCheckBoxesR"  type="checkbox"></label>
+                    <label >1.0 <input name="formCheckBoxesR"  type="checkbox" value="1.0"></label>
+                    <label >1.5 <input name="formCheckBoxesR"  type="checkbox" value="1.5"></label>
+                    <label >2.0 <input name="formCheckBoxesR"  type="checkbox" value="2.0"></label>
+                    <label >2.5 <input name="formCheckBoxesR"  type="checkbox" value="2.5"></label>
+                    <label >3.0 <input name="formCheckBoxesR"  type="checkbox" value="3.0"></label>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <label >Подтвердить: <button type="submit" name="submit" id=submitFormButton >Отправить</button></label>
                 </td>
+            </tr>
+            <tr>
+                <td id="answer">
+                </td>
+                <td></td>
             </tr>
         </table>
     </form>

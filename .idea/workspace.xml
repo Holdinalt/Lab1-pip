@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16e3f947-a5f3-4035-aaa4-9db01a12d4dd" name="Default Changelist" comment="Making css">
-      <change afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task.txt" afterDir="false" />
+    <list default="true" id="16e3f947-a5f3-4035-aaa4-9db01a12d4dd" name="Default Changelist" comment="Making php">
+      <change beforePath="$PROJECT_DIR$/.idea/1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,8 @@
       <workItem from="1600013879688" duration="675000" />
       <workItem from="1600017737017" duration="5698000" />
       <workItem from="1600025556137" duration="412000" />
-      <workItem from="1600025987803" duration="355000" />
+      <workItem from="1600025987803" duration="2091000" />
+      <workItem from="1600110104003" duration="3674000" />
     </task>
     <task id="LOCAL-00001" summary="Validation is done">
       <created>1599721919061</created>
@@ -102,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599742975466</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Making php">
+      <created>1600026422419</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600026422419</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +131,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Validation is done" />
     <MESSAGE value="Making css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making css" />
+    <MESSAGE value="Making php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="604" y="230" key="#CLI_Interpreters" timestamp="1600025463221">
@@ -162,10 +171,18 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="860" y="480" key="NewPhpFileDialog/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1600013909812" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1599742976751">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1600026424298">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1599742976751" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1600026424298" />
+    <state x="-1734" y="0" width="1750" height="1099" key="dock-window-1" timestamp="1600111863922">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1734" y="0" width="1750" height="1099" key="dock-window-1/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1600111863922" />
+    <state x="-1734" y="0" width="1750" height="1099" key="dock-window-2" timestamp="1600114178759">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1734" y="0" width="1750" height="1099" key="dock-window-2/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1600114178759" />
     <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1599574472653">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
