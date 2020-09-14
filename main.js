@@ -101,15 +101,11 @@ const buttonForm = {
     let formRadiosX = $("input[name='formRadiosX']:checked").val();
     let formTextY = $('#formTextY').val();
     let formCheckBoxesR = $('input[name="formCheckBoxesR"]').val();
-    $.ajax({
-        type: 'POST',
-        url: 'main.php?action=main.php',
-        data: "formRadiosX="+formRadiosX+"&formTextY"+formTextY+"&formCheckBoxesR"+formCheckBoxesR,
-        success: function(data){
-            $('#answer').html(data);
-        }
-    })
-}
+    $.post('main.php', {formRadiosX:formRadiosX, formTextY:formTextY, formCheckBoxesR:formCheckBoxesR},
+        function (response){
+            $('#answer').html(response.amount);
+        });
+    }
 
 }
 
