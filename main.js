@@ -10,22 +10,27 @@ function loadScripts(){
 
 
 const yInForm = {
-    isSubmit : false,
+
+    Str : "",
+
     checkStr : function (str){
         let path = /^((-[1-4](\.|,)[0-9])|([0-2](\.|,)[0-9])|-5(\.|,)0|3(\.|,)0|-[1-5]|[0-3])$/
-
+        this.Str = "";
         if(path.test(str)){
-            for (const char of str){
-                if ((char === ",") || (char === ".")){
-                    finalstr += ".";
-                }
-                this.delError();
-                return finalstr
-            }
         }else{
             this.makeError(" Y");
             return false
         }
+        yInForm.delError();
+        for (const char of str){
+            if ((char === ",") || (char === ".")){
+                this.Str += ".";
+            }else{
+                this.Str += char;
+            }
+        }
+        console.log(this.Str)
+        return this.Str
     },
 
 
@@ -88,23 +93,36 @@ const buttonForm = {
     buttonChecker : function (){
         let button = document.getElementById("submitFormButton")
         button.addEventListener("mouseover", function (){
-            this.checkSub();
+            buttonForm.checkSub();
 
         })
     },
 
     buttonListener : function (){
-        $("#submitFormButton").click(this.send());
+        let button = document.getElementById("submitFormButton")
+        button.addEventListener("click", function (){
+                buttonForm.send();
+        })
+
+        //$("#submitFormButton").click(buttonForm.send());
     },
 
     send : function(){
     let formRadiosX = $("input[name='formRadiosX']:checked").val();
-    let formTextY = $('#formTextY').val();
+    let formTextY = yInForm.Str;
     let formCheckBoxesR = $('input[name="formCheckBoxesR"]').val();
+    console.log(formRadiosX);
+    console.log(formTextY);
+    console.log(formCheckBoxesR);
+    console.log("formRadiosX="+formRadiosX+"&formTextY="+formTextY+"&formCheckBoxesR="+formCheckBoxesR);
     $.ajax({
         type: 'POST',
         url: 'main.php',
-        data: "formRadiosX="+formRadiosX+"&formTextY"+formTextY+"&formCheckBoxesR"+formCheckBoxesR,
+        data: {
+            formRadiosX: formRadiosX,
+            formTextY: formTextY,
+            formCheckBoxesR: formCheckBoxesR,
+        },
         success: function(data){
             $('#answer').html(data);
         }
