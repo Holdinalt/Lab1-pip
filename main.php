@@ -33,16 +33,16 @@ function validation(){
 
 function start(){
     global $start_time, $end_time;
-    $start_time = date("H:i:s");
+    date_default_timezone_set('Europe/Moscow');
+    session_start();
+    $start_time = microtime(true);
     makeSession();
     if (validation() != true){
         echo '<span class="badAns">Неверные входные данные</span>';
         return;
     }
-    session_start();
     $result = calcForm();
     sendResponse($result);
-    $end_time = date("H:i:s");
     addToSession($result);
 
 }
@@ -67,14 +67,8 @@ function sendResponse($bool){
 
 function makeSession(){
     $_SESSION['answers'] = array();
-    $_SESSION['ans_amount'] = 0;
 }
 
-function displaySession(){
-    foreach($_SESSION['answers'] AS $value){
-        echo $value;
-    }
-}
 
 function fillSessionAns($answer){
     if($answer){
@@ -87,15 +81,12 @@ function fillSessionAns($answer){
 
 function addToSession($answer){
     global $start_time, $end_time;
-    $_SESSION['answers'][$_SESSION['ans_amount']++] =
-        '<td>$_POST["formRadiosX"]</td>
+    $str = '<tr><td>' . $_POST["formRadiosX"] . '</td>
                         <td>' . $_POST["formTextY"] . '</td>
                         <td>' . $_POST["formCheckBoxesR"] . '</td>
                         <td>' . fillSessionAns($answer) . '</td>
-                        <td>' . $start_time . '</td>
-                        <td>' . $end_time - $start_time . '</td>';
+                        <td>' . date('H:i:s') . '</td>
+                        <td>' . (microtime(true) - $start_time) * 1000000 . '</td></tr>';
+    array_push($_SESSION['answers'], $str);
+
 }
-
-
-
-

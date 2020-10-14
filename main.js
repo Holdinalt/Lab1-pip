@@ -3,7 +3,6 @@
 
 function loadScripts(){
     yInForm.yListener();
-    rInForm.rListener();
     buttonForm.buttonChecker();
     buttonForm.buttonListener();
 }
@@ -102,7 +101,6 @@ const buttonForm = {
         let button = document.getElementById("submitFormButton")
         button.addEventListener("click", function (){
                 buttonForm.send();
-                preveusAnsvers();
         })
 
         //$("#submitFormButton").click(buttonForm.send());
@@ -111,22 +109,19 @@ const buttonForm = {
     send : function() {
         let formRadiosX = $("input[name='formRadiosX']:checked").val();
         let formTextY = yInForm.Str;
-        let formCheckBoxesR = $('input[name="formCheckBoxesR"]').val();
-        console.log(formRadiosX);
-        console.log(formTextY);
-        console.log(formCheckBoxesR);
-        console.log("formRadiosX=" + formRadiosX + "&formTextY=" + formTextY + "&formCheckBoxesR=" + formCheckBoxesR);
-        $.ajax({
-            type: 'POST',
-            url: 'main.php',
-            data: {
-                formRadiosX: formRadiosX,
-                formTextY: formTextY,
-                formCheckBoxesR: formCheckBoxesR,
-            },
-            success: function (data) {
-                $('#answer').html(data);
-            }
+        $('input[name="formCheckBoxesR"]').prop('checked', true).each((index, element) => {
+            $.ajax({
+                type: 'POST',
+                url: 'main.php',
+                data: {
+                    formRadiosX: formRadiosX,
+                    formTextY: formTextY,
+                    formCheckBoxesR: element.val(),
+                },
+                success: function (data) {
+                    $('#answer').html(data);
+                }
+            }).then(preveusAnsvers)
         })
     }
 }
