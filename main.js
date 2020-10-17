@@ -3,13 +3,25 @@
 
 function loadScripts(){
     yInForm.yListener();
-    buttonForm.buttonChecker();
+    //buttonForm.buttonChecker();
     buttonForm.buttonListener();
 }
 
 
+const xInForm = {
+
+    isXSubmit : function checkXSubmit(){
+        if($('input[name="formRadiosX"]:checked').length !== 0){
+            return true
+        } else{
+            return  false
+        }
+    }
+}
+
 const yInForm = {
 
+    isSubmit : false,
     Str : "",
 
     checkStr : function (str){
@@ -37,14 +49,14 @@ const yInForm = {
         let error = document.getElementById("errorAns");
         error.innerHTML = ("Введены неверные данные для " + thing.toString() );
         this.isSubmit = false;
-        buttonForm.checkSub(this.isSubmit);
+        //buttonForm.checkSub(this.isSubmit);
     },
 
     delError : function (){
         let error = document.getElementById("errorAns");
         error.innerHTML = "";
         this.isSubmit = true;
-        buttonForm.checkSub(this.isSubmit);
+        //buttonForm.checkSub(this.isSubmit);
     },
 
     yListener : function yListener(){
@@ -62,27 +74,21 @@ const yInForm = {
 
 const rInForm = {
 
-    rListener : function (){
+    isRSubmit : function (){
 
-            let prev = null;
-            for (let i of document.myForm.formCheckBoxesR) {
-                i.addEventListener('change', function() {
-                    if(prev === null){
-                        prev = this;
-                    }else{
-                        prev.checked = false;
-                        prev = this;
-                    }
-                });
-            }
+        if($('input[name="formCheckBoxesR"]:checked').length !== 0){
+            return  true
+        } else{
+            return  false
+        }
         },
 }
 
 const buttonForm = {
 
-    checkSub : function (){
+    /*checkSub : function (){
         let button = document.getElementById("submitFormButton")
-        if(yInForm.isSubmit === true){
+        if(yInForm.isSubmit === true && xInForm.isXSubmit() === true && rInForm.isRSubmit() === true){
             button.disabled = false;
         }else{
             button.disabled = true;
@@ -93,14 +99,18 @@ const buttonForm = {
         let button = document.getElementById("submitFormButton")
         button.addEventListener("mouseover", function (){
             buttonForm.checkSub();
-
         })
-    },
+    },*/
 
     buttonListener : function (){
         let button = document.getElementById("submitFormButton")
         button.addEventListener("click", function (){
+            if(yInForm.isSubmit === true && xInForm.isXSubmit() === true && rInForm.isRSubmit() === true){
                 buttonForm.send();
+            }else{
+                let error = document.getElementById("errorAns");
+                error.innerHTML = ("Введены не все данные");
+            }
         })
 
     },

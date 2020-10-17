@@ -770,4 +770,101 @@ POST array (
   'formRadiosX' => '-4',
   'formTextY' => '1',
   'formCheckBoxesR' => '1.0',
+)POST array (
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formRadiosX' => '-1',
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-1',
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formRadiosX' => '-2',
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-4',
+  'formTextY' => '',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formRadiosX' => '-4',
+  'formTextY' => '',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formRadiosX' => '-4',
+  'formTextY' => '',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formRadiosX' => '-4',
+  'formTextY' => '',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formRadiosX' => '-4',
+  'formTextY' => '',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.5',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '2',
+  'formCheckBoxesR' => '1.0',
+)POST array (
+  'formRadiosX' => '-3',
+  'formTextY' => '1',
+  'formCheckBoxesR' => '1.0',
 )

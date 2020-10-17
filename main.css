@@ -19,11 +19,12 @@ span.goodAns{
     color: green;
 }
 div.mainForm{
-    padding: 10px;
+    padding: 25px;
     border-radius: 25px;
     background-color: antiquewhite;
     width: 600px;
     height: 170px;
+
 }
 
 div.ans{
@@ -44,4 +45,14 @@ div.ans{
     overflow: auto;
     width: 500px;
     height: 300px;
+}
+
+.diagram{
+    padding: 25px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+
+.border{
+    border: 3px solid gray;
 }
