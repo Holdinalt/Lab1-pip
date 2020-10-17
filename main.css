@@ -3,12 +3,8 @@ header {
     font-family: fantasy;
     font-size: 200%;
 }
-table.Form {
-    width : 30%;
-    background-color: antiquewhite;
-
-}
 body{
+    font-family: Gill Sans, sans-serif;
     background-color: gray;
 }
 span.errorAns{
@@ -21,4 +17,31 @@ span.badAns{
 
 span.goodAns{
     color: green;
+}
+div.mainForm{
+    padding: 10px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    width: 600px;
+    height: 170px;
+}
+
+div.ans{
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    width: 500px;
+    height: 300px;
+}
+
+.formAns{
+    border-spacing: 10px;
+}
+
+.mainAns{
+    border: 3px solid gray;
+    overflow: auto;
+    width: 500px;
+    height: 300px;
 }

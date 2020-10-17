@@ -21,9 +21,9 @@ function calc($x, $y, $R){
 }
 
 function validation(){
-    $pathText = "/^((-[1-4](\.)[0-9])|([0-2](\.)[0-9])|-5(\.)0|3(\.)0|-[1-5]|[0-3])$/";
+    $pathText = "/^((-[1-4](\.|,)[0-9]*)|([0-2](\.|,)[0-9]*)|-5(\.|,)0|3(\.|,)0|-[1-5]|[0-3])$/";
     $pathX = "/^(-[1-4]|[0-4])$/";
-    $pathR = "/^[1-3]\.0$/";
+    $pathR = "/(^[1-3]\.0$)|(^[1-3]\.5$)/";
         if(preg_match($pathText, $_POST["formTextY"]) != 1 ||
             preg_match($pathX, $_POST["formRadiosX"]) != 1 ||
             preg_match($pathR, $_POST["formCheckBoxesR"]) != 1){
@@ -32,7 +32,8 @@ function validation(){
 }
 
 function start(){
-    global $start_time, $end_time;
+    typeLogs();
+    global $start_time;
     date_default_timezone_set('Europe/Moscow');
     session_start();
     $start_time = microtime(true);
@@ -42,8 +43,9 @@ function start(){
         return;
     }
     $result = calcForm();
-    sendResponse($result);
     addToSession($result);
+    typeSessionLogs();
+    sendResponse($result);
 
 }
 
@@ -66,7 +68,17 @@ function sendResponse($bool){
 }
 
 function makeSession(){
-    $_SESSION['answers'] = array();
+    if (empty($_SESSION)) {
+        $_SESSION['answers'] = array();
+        $_SESSION['answers'][0] = "<tr>
+                        <td>X</td>
+                        <td>Y</td>
+                        <td>R</td>
+                        <td>Результат</td>
+                        <td>Время вопроса</td>
+                        <td>Время выполнения</td>
+                    </tr>";
+    }
 }
 
 
@@ -80,7 +92,7 @@ function fillSessionAns($answer){
 
 
 function addToSession($answer){
-    global $start_time, $end_time;
+    global $start_time;
     $str = '<tr><td>' . $_POST["formRadiosX"] . '</td>
                         <td>' . $_POST["formTextY"] . '</td>
                         <td>' . $_POST["formCheckBoxesR"] . '</td>
@@ -89,4 +101,22 @@ function addToSession($answer){
                         <td>' . (microtime(true) - $start_time) * 1000000 . '</td></tr>';
     array_push($_SESSION['answers'], $str);
 
+}
+
+function typeLogs(){
+    $file_post = $_SERVER["DOCUMENT_ROOT"] . "/post.log";
+    if (!empty($_POST)) {
+        $fw = fopen($file_post, "a");
+        fwrite($fw, "POST " . var_export($_POST, true));
+        fclose($fw);
+    }
+}
+
+function typeSessionLogs(){
+    $file_post = $_SERVER["DOCUMENT_ROOT"] . "/session.log";
+    if (!empty($_SESSION)) {
+        $fw = fopen($file_post, "a");
+        fwrite($fw, "SESSION " . var_export($_SESSION, true));
+        fclose($fw);
+    }
 }

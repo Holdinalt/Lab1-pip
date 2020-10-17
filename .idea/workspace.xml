@@ -20,10 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16e3f947-a5f3-4035-aaa4-9db01a12d4dd" name="Default Changelist" comment="Final changes">
+      <change afterPath="$PROJECT_DIR$/post.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/task.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +50,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1hEDWOsr5ZLOIZsBg5FtFXBrHoD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,7 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Program Files/php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -91,6 +99,8 @@
       <workItem from="1600128548301" duration="128000" />
       <workItem from="1600160999036" duration="1580000" />
       <workItem from="1600162605635" duration="5839000" />
+      <workItem from="1602889049758" duration="3562000" />
+      <workItem from="1602961883075" duration="1245000" />
     </task>
     <task id="LOCAL-00001" summary="Validation is done">
       <created>1599721919061</created>
@@ -132,6 +142,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -179,11 +192,11 @@
     </state>
     <state x="359" y="156" width="817" height="605" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600161300189" />
     <state x="479" y="211" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1600026070351" />
-    <state x="249" y="267" key="FileChooserDialogImpl" timestamp="1600128602451">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="332" y="360" key="FileChooserDialogImpl" timestamp="1602701689638">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="249" y="267" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600128602451" />
-    <state x="332" y="360" key="FileChooserDialogImpl/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1600025505839" />
+    <state x="332" y="360" key="FileChooserDialogImpl/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1602701689638" />
     <state x="903" y="454" key="Github.ShareDialog" timestamp="1599579538377">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

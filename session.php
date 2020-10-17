@@ -5,8 +5,7 @@ echo getSessionAns();
 
 function getSessionAns(){
     $ret = "";
-    foreach ($_SESSION['answers'] AS $answer){
-        $ret .= $answer;
-    }
+    $ret .= var_export($_SESSION, true);
+
     return $ret;
 }

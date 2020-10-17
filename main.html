@@ -16,8 +16,6 @@
                     </span>
                 </td>
                 <td width="33%" align="center">
-                    <span class = "header">Страница главного дрочилы всего интернета
-                    </span>
                 </td>
                 <td width="33%" align="center">
                     <span class = "header">Вариант: 2407
@@ -27,17 +25,18 @@
         </table>
     </header>
 
-    <table>
+    <table style="border-spacing: 30px;">
         <tr>
             <td>
+                <div class="mainForm">
                 <form name=myForm method="post" >
                     <table class="Form">
                         <tr><td colspan="2"><legend>Введите координаты точки</legend></td></tr>
                         <tr>
                         <tr><td colspan="2"><span id="errorAns" class="errorAns"></span></td></tr>
                         <tr>
-                            <td>Изменение Х:</td>
-                            <td>
+                            <td><div style="width: 120px">Изменение Х:</div></td>
+                            <td><div style="width: 400px">
                                 <label>-4<input required name="formRadiosX" type="radio" value="-4"></label>
                                 <label>-3<input required name="formRadiosX" type="radio" value="-3"></label>
                                 <label>-2<input required name="formRadiosX" type="radio" value="-2"></label>
@@ -47,6 +46,7 @@
                                 <label>2<input required name="formRadiosX" type="radio" value="2"></label>
                                 <label>3<input required name="formRadiosX" type="radio" value="3"></label>
                                 <label>4<input required name="formRadiosX" type="radio" value="4"></label>
+                            </div>
                             </td>
                         </tr>
                         <tr>
@@ -71,15 +71,18 @@
                             </td>
                         </tr>
                         <tr>
-                            <td id="answer">
+                            <td colspan="2" id="answer">
                             </td>
                             <td></td>
                         </tr>
                     </table>
                 </form>
+                </div>
             </td>
             <td>
-                <table class="Form" id="prevAns">
+                <div class="ans">
+                    <div class="mainAns">
+                <table class="formAns" id="prevAns" >
                     <tr>
                         <td>X</td>
                         <td>Y</td>
@@ -89,9 +92,12 @@
                         <td>Время выполнения</td>
                     </tr>
                 </table>
+                    </div>
+                </div>
             </td>
         </tr>
     </table>
+
 
 </body>
 </html>
