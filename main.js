@@ -3,7 +3,7 @@
 
 function loadScripts(){
     yInForm.yListener();
-    //buttonForm.buttonChecker();
+    rInForm.rListener();
     buttonForm.buttonListener();
 }
 
@@ -65,6 +65,7 @@ const yInForm = {
             if(!yInForm.checkStr(rad.value) === false){
                 yInForm.delError();
             }
+            buttonForm.check();
         })
     },
 
@@ -73,6 +74,14 @@ const yInForm = {
 }
 
 const rInForm = {
+
+    rListener : function(){
+        $('input[name="formCheckBoxesR"]').each(function() {
+            $(this).on('change', function(){
+                buttonForm.check();
+            })
+        })
+    },
 
     isRSubmit : function (){
 
@@ -102,15 +111,21 @@ const buttonForm = {
         })
     },*/
 
+    check : function (){
+        let error2 = document.getElementById("errorAns2");
+        if(yInForm.isSubmit === true && xInForm.isXSubmit() === true && rInForm.isRSubmit() === true){
+            error2.innerHTML = ("");
+            buttonForm.send();
+        }else{
+            error2.innerHTML = ("Введены не все данные ");
+        }
+
+    },
+
     buttonListener : function (){
         let button = document.getElementById("submitFormButton")
         button.addEventListener("click", function (){
-            if(yInForm.isSubmit === true && xInForm.isXSubmit() === true && rInForm.isRSubmit() === true){
-                buttonForm.send();
-            }else{
-                let error = document.getElementById("errorAns");
-                error.innerHTML = ("Введены не все данные");
-            }
+            buttonForm.check();
         })
 
     },
