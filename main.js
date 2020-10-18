@@ -115,9 +115,10 @@ const buttonForm = {
         let error2 = document.getElementById("errorAns2");
         if(yInForm.isSubmit === true && xInForm.isXSubmit() === true && rInForm.isRSubmit() === true){
             error2.innerHTML = ("");
-            buttonForm.send();
+            return true
         }else{
             error2.innerHTML = ("Введены не все данные ");
+            return false
         }
 
     },
@@ -125,9 +126,10 @@ const buttonForm = {
     buttonListener : function (){
         let button = document.getElementById("submitFormButton")
         button.addEventListener("click", function (){
-            buttonForm.check();
+            if(buttonForm.check() === true){
+                buttonForm.send();
+            }
         })
-
     },
 
     send : function() {
