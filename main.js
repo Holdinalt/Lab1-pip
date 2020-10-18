@@ -25,7 +25,7 @@ const yInForm = {
     Str : "",
 
     checkStr : function (str){
-        let path = /^((-[1-4](\.|,)[0-9]*)|([0-2](\.|,)[0-9]*)|-5(\.|,)0|3(\.|,)0|-[1-5]|[0-3])$/
+        let path = /^0*((-[1-4](\.|,)[0-9]*)|([0-2](\.|,)[0-9]*)|-5(\.|,)0|3(\.|,)0|-[1-5]|[0-3])$/
         this.Str = "";
         if(path.test(str)){
         }else{
@@ -67,6 +67,12 @@ const yInForm = {
             }
             buttonForm.check();
         })
+    },
+
+    pop : function(str){
+        str = str.replace(/^0+/, '')
+        str = str.replace(/0+$/, '')
+        return str
     },
 
 
@@ -111,6 +117,9 @@ const buttonForm = {
         })
     },*/
 
+
+
+
     check : function (){
         let error2 = document.getElementById("errorAns2");
         if(yInForm.isSubmit === true && xInForm.isXSubmit() === true && rInForm.isRSubmit() === true){
@@ -135,7 +144,7 @@ const buttonForm = {
     send : function() {
         $('input[name="formCheckBoxesR"]:checked').each(function(){
             let formRadiosX = $("input[name='formRadiosX']:checked").val();
-            let formTextY = yInForm.Str;
+            let formTextY = yInForm.pop(yInForm.Str);
             let formBoxR = $(this).val();
             console.log(formRadiosX)
             console.log(formTextY)
@@ -156,7 +165,7 @@ const buttonForm = {
     }
 }
 
-function preveusAnsvers(){
+function preveusAnsvers() {
     $.ajax({
         type: 'POST',
         url: 'session.php',
@@ -165,6 +174,8 @@ function preveusAnsvers(){
         }
     })
 }
+
+
 
 
 

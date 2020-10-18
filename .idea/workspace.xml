@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16e3f947-a5f3-4035-aaa4-9db01a12d4dd" name="Default Changelist" comment="Working" />
+    <list default="true" id="16e3f947-a5f3-4035-aaa4-9db01a12d4dd" name="Default Changelist" comment="Small fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diargam.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/diargam.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post.log" beforeDir="false" afterPath="$PROJECT_DIR$/post.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session.log" beforeDir="false" afterPath="$PROJECT_DIR$/session.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +101,7 @@
       <workItem from="1600162605635" duration="5839000" />
       <workItem from="1602889049758" duration="3562000" />
       <workItem from="1602961883075" duration="1245000" />
-      <workItem from="1602963840814" duration="10233000" />
+      <workItem from="1602963840814" duration="11395000" />
     </task>
     <task id="LOCAL-00001" summary="Validation is done">
       <created>1599721919061</created>
@@ -153,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603027023793</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Small fixes">
+      <created>1603027293208</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603027293208</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +193,8 @@
     <MESSAGE value="Making php" />
     <MESSAGE value="Final changes" />
     <MESSAGE value="Working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working" />
+    <MESSAGE value="Small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="453" y="135" key="#CLI_Interpreters" timestamp="1600128608161">
@@ -242,10 +256,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="860" y="480" key="NewPhpFileDialog/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1600013909812" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603027026148">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603027299527">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1603027026148" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1603027299527" />
     <state x="-1734" y="0" width="1750" height="1099" key="dock-window-1" timestamp="1600111863922">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
