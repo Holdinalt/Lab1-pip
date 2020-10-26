@@ -3,7 +3,6 @@
 
 start();
 
-
 function calc($x, $y, $R){
     switch ($x >= 0){
         case (true) : switch ($y > 0){
@@ -21,7 +20,7 @@ function calc($x, $y, $R){
 }
 
 function validation(){
-    $pathText = "/^((-[1-4](\.|,)[0-9]*)|([0-2](\.|,)[0-9]*)|-5(\.|,)0|3(\.|,)0|-[1-5]|[0-3])$/";
+    $pathText = "/^0*((-[1-4](\.|,)[0-9]*)|([0-2](\.|,)[0-9]*)|-5(\.|,)0|3(\.|,)0|-[1-5]|[0-3])$/";
     $pathX = "/^(-[1-4]|[0-4])$/";
     $pathR = "/(^[1-3]\.0$)|(^[1-3]\.5$)/";
         if(preg_match($pathText, $_POST["formTextY"]) != 1 ||
@@ -32,7 +31,7 @@ function validation(){
 }
 
 function start(){
-    typeLogs();
+    //typeLogs();
     global $start_time;
     date_default_timezone_set('Europe/Moscow');
     session_start();
@@ -44,7 +43,7 @@ function start(){
     }
     $result = calcForm();
     addToSession($result);
-    typeSessionLogs();
+    //typeSessionLogs();
     sendResponse($result);
 
 }

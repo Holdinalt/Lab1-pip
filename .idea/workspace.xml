@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16e3f947-a5f3-4035-aaa4-9db01a12d4dd" name="Default Changelist" comment="Small fixes">
+    <list default="true" id="16e3f947-a5f3-4035-aaa4-9db01a12d4dd" name="Default Changelist" comment="more adds">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diargam.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/diargam.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post.log" beforeDir="false" afterPath="$PROJECT_DIR$/post.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/session.log" beforeDir="false" afterPath="$PROJECT_DIR$/session.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +100,9 @@
       <workItem from="1600162605635" duration="5839000" />
       <workItem from="1602889049758" duration="3562000" />
       <workItem from="1602961883075" duration="1245000" />
-      <workItem from="1602963840814" duration="11395000" />
+      <workItem from="1602963840814" duration="12936000" />
+      <workItem from="1603722951927" duration="1424000" />
+      <workItem from="1603731786942" duration="1053000" />
     </task>
     <task id="LOCAL-00001" summary="Validation is done">
       <created>1599721919061</created>
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603027293208</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="more adds">
+      <created>1603046088499</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603046088499</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +202,8 @@
     <MESSAGE value="Final changes" />
     <MESSAGE value="Working" />
     <MESSAGE value="Small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fixes" />
+    <MESSAGE value="more adds" />
+    <option name="LAST_COMMIT_MESSAGE" value="more adds" />
   </component>
   <component name="WindowStateProjectService">
     <state x="453" y="135" key="#CLI_Interpreters" timestamp="1600128608161">
@@ -256,10 +265,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="860" y="480" key="NewPhpFileDialog/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1600013909812" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603027299527">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603046090831">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1603027299527" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1603046090831" />
     <state x="-1734" y="0" width="1750" height="1099" key="dock-window-1" timestamp="1600111863922">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
