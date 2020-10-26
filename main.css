@@ -1,5 +1,6 @@
 header {
-    color: blue;
+    text-shadow: black 0 0 2px;
+    color: antiquewhite;
     font-family: fantasy;
     font-size: 200%;
 }
