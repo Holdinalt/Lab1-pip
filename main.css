@@ -20,6 +20,7 @@ span.goodAns{
 }
 
 div.mainForm{
+    text-indent: 5%;
     padding: 25px;
     border-radius: 25px;
     background-color: antiquewhite;
